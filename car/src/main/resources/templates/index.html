@@ -23,6 +23,7 @@
      <tr>
       <th>Car Brand</th>
       <th>Car Name</th>
+      <th>Car Price</th>
       <th>Update</th>
       <th>Delete</th>
      </tr>
@@ -32,6 +33,7 @@
      <tr th:each="car : ${carList}">
       <td th:text="${car.brand}"></td>
       <td th:text="${car.name}"></td>
+      <td th:text="${car.price}"></td>
       <td><a th:href="@{/updateForm/{id}(id=${car.id})}" class="btn btn-primary">Update</a></td>
       <td><a th:href="@{/delete/{id}(id=${car.id})}" class="btn btn-danger">Delete</a></td>
      </tr>
