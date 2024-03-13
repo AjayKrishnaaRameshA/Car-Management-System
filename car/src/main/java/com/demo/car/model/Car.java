@@ -26,6 +26,7 @@ public class Car {
 	private Integer id;
 	private String brand;
 	private String name;
+	private Double price;
 	
 	
 }
